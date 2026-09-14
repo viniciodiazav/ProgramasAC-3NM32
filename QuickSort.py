@@ -22,8 +22,3 @@ def part(arr, mi, ma):
     arr[ma] = tmp
 
     return (i + 1)
-
-arr = [2,8,4,2,3,6,9,4,0,2,5,4,1]
-print(arr)
-quickSort(arr, 0, len(arr) - 1)
-print(arr)

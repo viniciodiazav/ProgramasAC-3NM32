@@ -1,4 +1,5 @@
-# Diaz Avelar Leonardo Vinicio 
+# Calificaciones
+
 import math as m
 
 def getGrades():
@@ -33,10 +34,11 @@ def gradesGtAvergae(grades, av):
 def printResults(grades, av):
     gradesGtAv = gradesGtAvergae(grades, av)
     print(f"Tu promedio es de: {av:.1f}")
-    print(f"Existen {len(gradesGtAv)} mas altas que el promedio: {gradesGtAv}")
+    print(f"Existen {len(gradesGtAv)} calificaciones mas altas que el promedio: {gradesGtAv}")
 
 
 grades = getGrades()
 av = getAverage(grades)
 
 printResults(grades, av)
+

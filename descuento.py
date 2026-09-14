@@ -1,3 +1,5 @@
+# Descuento sobre descuento
+
 def getNumberGt0(message, error):
     num = -1;
     while (num <= 0):

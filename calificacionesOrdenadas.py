@@ -1,3 +1,5 @@
+# Califiaciones Ordenadas
+
 import os
 from QuickSort import quickSort
 
@@ -5,7 +7,7 @@ def getGrades():
     grades = []
     grade = -1
     i = 1
-    os.system("clear")
+  #  os.system("clear")
     print("====== Captura de calificaciones ======\nINGRESE \"q\" PARA SALIR\n")
     while (grade != 'q' or (grade < 0 and grade > 10)):
         grade = input(f"calificacion [{i}]: ")
@@ -30,7 +32,7 @@ def printSortGrades(grades):
     print("Calificaiones ordenadas:")
     quickSort(grades, 0, len(grades) - 1)
     print(grades)
-    print(f"Promedio: {sum(grades) / len(grades)}")
+    print(f"Promedio: {(sum(grades) / len(grades)):.2f}")
 
 grades = getGrades()
 printSortGrades(grades)

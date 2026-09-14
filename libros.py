@@ -14,7 +14,7 @@ def getNumberGt0(message: str, error: str):
 def getPrices():
     prices = []
     for i in range(1, 4):
-        prices.append(getNumberGt0(f"Ingrese el valor del libro {i}: $", "Ingrese un precio valido..."))
+        prices.append(getNumberGt0(f"Ingrese el precio del libro {i}: $", "Ingrese un precio valido..."))
     prices.sort()
     return prices
 
