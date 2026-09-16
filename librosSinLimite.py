@@ -45,7 +45,7 @@ def makePackages(books):
                     ma = books[j + 1]
             except:
                 "" 
-        print(f"--> Packete {inx}, Libro de mayor precio: ${ma}")
+        print(f"--> Paquete {inx}, Libro de mayor precio: ${ma}")
         inx += 1 
         total += ma
     print(f"====== Ticket ======\nTotal a pagar: ${total}")
