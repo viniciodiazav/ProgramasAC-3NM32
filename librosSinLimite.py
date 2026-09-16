@@ -40,7 +40,7 @@ def makePackages(books):
         ma = books[i]
         for j in range(i, i + 3):
             try:
-                print(end=f"{books[j]} ")
+                print(end=f"${books[j]} ")
                 if ((ma < books[j + 1]) and ((j - i) + bs) != 5):
                     ma = books[j + 1]
             except:
