@@ -12,6 +12,7 @@ def getNumberGt0(message: str, error: str):
     return num
 
 def getBooks():
+    print("====== Libreria ¡promocion de 3x1! ======\n*** precione la tecla \"q\" para salir ***")
     books = []
     book = -1
     i = 1
@@ -36,25 +37,20 @@ def makePackages(books):
     bs = 0
     total = 0
     for i in range(0, lenght, 3):
-        bs = 0
         ma = books[i]
         for j in range(i, i + 3):
             try:
-                bs += 1
                 print(end=f"{books[j]} ")
-                # print(f"{ma} [{j}] es menor que {books[j + 1]} [{j + 1}][{(j - i) + bs}]")
                 if ((ma < books[j + 1]) and ((j - i) + bs) != 5):
                     ma = books[j + 1]
             except:
-                bs -= 1
                 "" 
-        print(f"--> Packete {inx} -- cant: {bs} --- mayor: {ma}")
+        print(f"--> Packete {inx}, Libro de mayor precio: ${ma}")
         inx += 1 
         total += ma
-    print(f"Total = {total}")
+    print(f"====== Ticket ======\nTotal a pagar: ${total}")
         
 
-p = [5,6,8,9,7,4,2,1,5,7,9,6,3,5,4,4,5,6,9,8,7,1,2,6,8,4,3,2,1,6,9,8,4,1]
-
-makePackages(p)
+books = getBooks()
+makePackages(books)
 
